@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<BossCollection>
+		<Bosses>
+			<Boss name="A">
+			<HP>6</HP>
+			<Melee>10</Melee>
+			<Ranged>2</Ranged>
+			<Magic>2</Magic>
+			<Armor>5</Armor>
+			<Speed>1</Speed>
+			<Resist>2</Resist>
+			<Model>Kargg</Model>
+			<meTimer>6</meTimer>
+			<raTimer>8</raTimer>
+			<maTimer>9</maTimer>
+			</Boss>
+			<Boss name="B">
+			<HP>6</HP>
+			<Melee>10</Melee>
+			<Ranged>2</Ranged>
+			<Magic>2</Magic>
+			<Armor>5</Armor>
+			<Speed>1</Speed>
+			<Resist>2</Resist>
+			<Model>Kargg</Model>
+			<meTimer>6</meTimer>
+			<raTimer>8</raTimer>
+			<maTimer>9</maTimer>
+			</Boss>
+			<Boss name="C">
+			<HP>6</HP>
+			<Melee>10</Melee>
+			<Ranged>2</Ranged>
+			<Magic>2</Magic>
+			<Armor>5</Armor>
+			<Speed>1</Speed>
+			<Resist>2</Resist>
+			<Model>Kargg</Model>
+			<meTimer>6</meTimer>
+			<raTimer>8</raTimer>
+			<maTimer>9</maTimer>
+			</Boss>
+			<Boss name="D">
+			<HP>6</HP>
+			<Melee>10</Melee>
+			<Ranged>2</Ranged>
+			<Magic>2</Magic>
+			<Armor>5</Armor>
+			<Speed>1</Speed>
+			<Resist>2</Resist>
+			<Model>Kargg</Model>
+			<meTimer>6</meTimer>
+			<raTimer>8</raTimer>
+			<maTimer>9</maTimer>
+			</Boss>
+			<Boss name="E">
+			<HP>6</HP>
+			<Melee>10</Melee>
+			<Ranged>2</Ranged>
+			<Magic>2</Magic>
+			<Armor>5</Armor>
+			<Speed>1</Speed>
+			<Resist>2</Resist>
+			<Model>Kargg</Model>
+			<meTimer>6</meTimer>
+			<raTimer>8</raTimer>
+			<maTimer>9</maTimer>
+			</Boss>
+			<Boss name="F">
+			<HP>6</HP>
+			<Melee>10</Melee>
+			<Ranged>2</Ranged>
+			<Magic>2</Magic>
+			<Armor>5</Armor>
+			<Speed>1</Speed>
+			<Resist>2</Resist>
+			<Model>Kargg</Model>
+			<meTimer>6</meTimer>
+			<raTimer>8</raTimer>
+			<maTimer>9</maTimer>
+			</Boss>
+			<Boss name="G">
+			<HP>6</HP>
+			<Melee>10</Melee>
+			<Ranged>2</Ranged>
+			<Magic>2</Magic>
+			<Armor>5</Armor>
+			<Speed>1</Speed>
+			<Resist>2</Resist>
+			<Model>Kargg</Model>
+			<meTimer>6</meTimer>
+			<raTimer>8</raTimer>
+			<maTimer>9</maTimer>
+			</Boss>
+		</Bosses>
+</BossCollection>
