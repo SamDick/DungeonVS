@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D2B6F01F-547B-37B6-CBB2-51FF10786C67}</ProjectGuid>
+    <ProjectGuid>{093B2CDF-9BC5-B7B0-DEB8-5200AA068501}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -65,14 +65,15 @@
      <Compile Include="Assets\Code\HUDkeeper.cs" />
      <Compile Include="Assets\Code\SceneHandler.cs" />
      <Compile Include="Assets\Code\StatsManager.cs" />
-     <Compile Include="Assets\Code\Versus\NetworkScripts\NetworkCharacter.cs" />
-     <Compile Include="Assets\Code\Versus\NetworkScripts\NetworkControl.cs" />
-     <Compile Include="Assets\Code\Versus\NetworkScripts\NetworkManager.cs" />
-     <Compile Include="Assets\Code\Versus\NetworkScripts\NetworkReciever.cs" />
-     <Compile Include="Assets\Code\Versus\Old Stuff\AttackSelect.cs" />
-     <Compile Include="Assets\Code\Versus\Old Stuff\VersusBattleControl.cs" />
-     <Compile Include="Assets\Code\Versus\Old Stuff\reference\Spawner.cs" />
-     <Compile Include="Assets\Code\Versus\VersusControl.cs" />
+     <Compile Include="Assets\Code\Versus\Local\LocalController.cs" />
+     <Compile Include="Assets\Code\Versus\Network\NetworkScripts\NetworkCharacter.cs" />
+     <Compile Include="Assets\Code\Versus\Network\NetworkScripts\NetworkControl.cs" />
+     <Compile Include="Assets\Code\Versus\Network\NetworkScripts\NetworkManager.cs" />
+     <Compile Include="Assets\Code\Versus\Network\NetworkScripts\NetworkReciever.cs" />
+     <Compile Include="Assets\Code\Versus\Network\Old Stuff\AttackSelect.cs" />
+     <Compile Include="Assets\Code\Versus\Network\Old Stuff\VersusBattleControl.cs" />
+     <Compile Include="Assets\Code\Versus\Network\Old Stuff\reference\Spawner.cs" />
+     <Compile Include="Assets\Code\Versus\Network\VersusControl.cs" />
      <Compile Include="Assets\Photon Unity Networking\PhotonChatApi\ChatChannel.cs" />
      <Compile Include="Assets\Photon Unity Networking\PhotonChatApi\ChatClient.cs" />
      <Compile Include="Assets\Photon Unity Networking\PhotonChatApi\ChatDisconnectCause.cs" />
@@ -162,15 +163,15 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/Sam/Desktop/Unity Files/Dungeon VS/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/Sam/Documents/DungeonVS/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/Sam/Desktop/Unity Files/Dungeon VS/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>C:/Users/Sam/Documents/DungeonVS/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{8EF17000-57D8-89E5-13B8-36B059396619}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{EE6940F0-928F-8655-6D52-B7A8CD4C5568}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class TouchControl : MonoBehaviour {
-
+	int playerNumber;
 	StatsManager sm;
 	public float nextRot;
 	public Vector3 nextSpot;
@@ -10,8 +10,19 @@ public class TouchControl : MonoBehaviour {
 	RaycastHit rhit;
 	RaycastHit hit;
 	Vector3 lookRight;
+	Camera cam;
 
 	void Awake () {
+		cam = GetComponentInChildren<Camera> ();
+
+		if (transform.position == new Vector3 (0, 6, 0)) {
+			playerNumber = 0;
+			cam.rect = new Rect (0, 0.5f, 1, 0.5f);
+		} else {
+			playerNumber = 1;
+			cam.rect = new Rect (0, 0, 1, 0.5f);
+
+		}
 	lookRight = new Vector3(0,90,0);
 	}
 	

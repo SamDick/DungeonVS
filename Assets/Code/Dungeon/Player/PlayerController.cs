@@ -24,6 +24,9 @@ public class PlayerController : MonoBehaviour {
 	Rigidbody rb;
 
 	void Start () {
+		
+
+
 		maxStamina = 4;
 		stamina = 1;
 		rb = GetComponent<Rigidbody> ();
