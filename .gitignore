@@ -1,0 +1,29 @@
+# Ignore everything
+/*
+/*/
+
+# Inverse ignore some stuff
+!/Assets/
+!/ProjectSettings/
+!.gitignore
+!/rival-star-hero_WwiseProject/
+
+# OS Stuff
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+$RECYCLE.BIN/
+Desktop.ini
+
+# Wwise Stuff
+Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
+rival-star-hero_WwiseProject/.cache/
+*.akd
+*.validationcache
+*.prof
+packages/
+bin/
+packages.config
