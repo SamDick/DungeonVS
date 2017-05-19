@@ -37,7 +37,7 @@ public class TouchControl : MonoBehaviour {
 		Vector3 fwd = transform.forward;
 		Physics.Raycast (transform.position, fwd, out hit);
 
-		if (Input.GetKeyDown (KeyCode.W) && moveLock != true ) {
+		if (Input.GetKeyDown (KeyCode.W) && moveLock != true & playerNumber == 0) {
 			if (Physics.Raycast(transform.position, fwd, out hit) && hit.collider.gameObject.layer == 9 && moveLock == false){
 
 				nextSpot = hit.collider.transform.position;

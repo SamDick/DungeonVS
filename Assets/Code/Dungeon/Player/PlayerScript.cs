@@ -7,6 +7,7 @@ public class PlayerScript : MonoBehaviour {
 	StatsManager sm;
 
 	public bool battle;
+	int playerNumber;
 
 	public float hp;
 	public float hpTotal;
@@ -25,6 +26,8 @@ public class PlayerScript : MonoBehaviour {
 	public float maTimerTotal;
 	public GameObject boss;
 	BossShell bs;
+	Camera cam;
+
 
 	bool attacking;
 	void Awake(){
@@ -34,6 +37,18 @@ public class PlayerScript : MonoBehaviour {
 	}
 
 	void Start () {
+
+		cam = GetComponentInChildren<Camera> ();
+
+		if (transform.position == new Vector3 (0, 6, 0)) {
+			playerNumber = 0;
+			cam.rect = new Rect (0, 0.5f, 1, 0.5f);
+		} else {
+			playerNumber = 1;
+			cam.rect = new Rect (0, 0, 1, 0.5f);
+
+		}
+
 	
 		manager = GameObject.Find ("Manager(Clone)");
 		sm = manager.GetComponent<StatsManager> ();
