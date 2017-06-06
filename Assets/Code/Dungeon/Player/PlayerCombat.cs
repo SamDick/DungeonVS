@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerScript : MonoBehaviour {
+public class PlayerCombat: MonoBehaviour {
 
 	GameObject manager;
 	StatsManager sm;

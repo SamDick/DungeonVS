@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TouchControl : MonoBehaviour {
+public class PlayerControl: MonoBehaviour {
 	int playerNumber;
 	StatsManager sm;
 	public float nextRot;
@@ -26,7 +26,7 @@ public class TouchControl : MonoBehaviour {
 	lookRight = new Vector3(0,90,0);
 	}
 	
-	// Update is called once per frame
+
 	void Update () {
 		if (sm == null) {
 			sm = GameObject.Find ("Manager(Clone)").GetComponent<StatsManager> ();
@@ -37,7 +37,10 @@ public class TouchControl : MonoBehaviour {
 		Vector3 fwd = transform.forward;
 		Physics.Raycast (transform.position, fwd, out hit);
 
-		if (Input.GetKeyDown (KeyCode.W) && moveLock != true & playerNumber == 0) {
+
+		if (
+				//Input.GetKeyDown (KeyCode.W) && moveLock != true & playerNumber == 0 ||
+				Input.GetAxis("Horizontal" + playerNumber) >= 0) {
 			if (Physics.Raycast(transform.position, fwd, out hit) && hit.collider.gameObject.layer == 9 && moveLock == false){
 
 				nextSpot = hit.collider.transform.position;
@@ -55,8 +58,8 @@ public class TouchControl : MonoBehaviour {
 		}
 
 
-
-		if (Input.GetKeyDown (KeyCode.D)) {
+			// joystick buttons instead of making axis'. Perhaps making axes is not the wisest. Make the keycode.
+			if (Input.GetAxis()) {
 			
 			nextRot += 90;
 		}
