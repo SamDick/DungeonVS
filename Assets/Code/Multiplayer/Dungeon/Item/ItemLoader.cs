@@ -44,7 +44,7 @@ public class ItemLoader : MonoBehaviour
 		for (i = 0; i < bossSpots.Length; i++) {
 			Instantiate (itemPrefab, bossSpots [i].transform.position + new Vector3(0,6,0), transform.rotation, bossSpots[i].transform);
 
-
+			its.gameObject.GetComponent<SpriteRenderer> ().sprite = Resources.Load<Sprite> ("Sprites/Weapons/Sprite" + newList [i].Sprite.ToString());
 			its.name = newList [i].name;
 			its.Melee = newList [i].Melee;
 			its.Ranged = newList [i].Ranged;
@@ -56,4 +56,8 @@ public class ItemLoader : MonoBehaviour
 		}
 
 		}
+	void Update(){
+
+
+	}
 }

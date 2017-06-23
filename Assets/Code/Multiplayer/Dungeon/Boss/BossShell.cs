@@ -14,6 +14,7 @@ public class BossShell : MonoBehaviour {
 	public float speed;
 	public float resist;
 	public string model;
+	public float hpTotal;
 	Sprite placeholder;
 
 	public bool fight;
@@ -30,6 +31,7 @@ public class BossShell : MonoBehaviour {
 	int i;
 
 	void Start () {
+		
 		sm = GameObject.Find ("Manager(Clone)").GetComponent<StatsManager> ();
 
 		setBosses = GameObject.FindGameObjectsWithTag ("BossSpot");
@@ -39,7 +41,7 @@ public class BossShell : MonoBehaviour {
 	
 		player = GameObject.FindGameObjectWithTag ("Player");
 		ps = player.GetComponent<DungeonBattleControl> ();
-
+		hpTotal = HP;
 			
 	}
 	

@@ -52,21 +52,21 @@ public class DungeonBattleControl : MonoBehaviour {
 
 			if (meTimer <= 0 || meTimer == 0) {
 
-				if (Input.GetKeyDown (KeyCode.UpArrow) && attacking == false) {
+				if (Input.GetKey (KeyCode.JoystickButton0) && attacking == false) {
 					StartCoroutine (Melee ());
 					attacking = true;
 					meTimer = 6 / sm.speed + sm.armor / 4;
 				}
 			}
 			if (raTimer <= 0 || raTimer == 0) {
-				if (Input.GetKeyDown (KeyCode.LeftArrow) && attacking == false) {
+				if (Input.GetKey (KeyCode.JoystickButton1) && attacking == false) {
 					StartCoroutine (Ranged ());
 					attacking = true;
 					raTimer = 6 / sm.speed + sm.armor / 2 - sm.speed / 4;
 				}
 			}
 			if (maTimer <= 0 || maTimer == 0) {
-				if (Input.GetKeyDown (KeyCode.RightArrow) && attacking == false) {
+				if (Input.GetKey (KeyCode.JoystickButton2) && attacking == false) {
 					StartCoroutine (Magic ());
 					attacking = true;
 					maTimer = 6 / sm.speed + sm.armor / 2 - sm.resist / 2;

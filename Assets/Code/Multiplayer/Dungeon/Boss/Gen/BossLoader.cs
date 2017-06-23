@@ -49,6 +49,7 @@ public class BossLoader : MonoBehaviour {
 			BossShell bs = bossSpots[i].GetComponent<BossShell> ();
 			bs.name = newList [i].name;
 			bs.HP = newList [i].HP;
+			bs.hpTotal = newList [i].HP;
 			bs.melee =newList[i].Melee;
 			bs.ranged = newList[i].Ranged;
 			bs.magic = newList[i].Magic;

@@ -56,6 +56,7 @@ public class ItemShell : MonoBehaviour {
 				its.Armor = newList [i].Armor;
 				its.Speed = newList [i].Speed;
 				its.Resist = newList [i].Resist;
+				its.Sprite = newList [i].Sprite;
 				its.type = newList [i].type;
 			}
 		}

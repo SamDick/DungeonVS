@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerCombat: MonoBehaviour {
+public class SoloCombat: MonoBehaviour {
 
 	GameObject manager;
 	StatsManager sm;
@@ -26,7 +26,8 @@ public class PlayerCombat: MonoBehaviour {
 	public float maTimerTotal;
 	public GameObject boss;
 	BossShell bs;
-	Camera cam;
+
+
 
 
 	bool attacking;
@@ -38,18 +39,7 @@ public class PlayerCombat: MonoBehaviour {
 
 	void Start () {
 
-		cam = GetComponentInChildren<Camera> ();
 
-		if (transform.position == new Vector3 (0, 6, 0)) {
-			playerNumber = 0;
-			cam.rect = new Rect (0, 0.5f, 1, 0.5f);
-		} else {
-			playerNumber = 1;
-			cam.rect = new Rect (0, 0, 1, 0.5f);
-
-		}
-
-	
 		manager = GameObject.Find ("Manager(Clone)");
 		sm = manager.GetComponent<StatsManager> ();
 
@@ -64,7 +54,7 @@ public class PlayerCombat: MonoBehaviour {
 		boss = null;
 
 	}
-	
+
 	// Update is called once per frame
 	void Update () 
 	{
@@ -90,7 +80,7 @@ public class PlayerCombat: MonoBehaviour {
 
 			if (meTimer <= 0 || meTimer == 0) {
 
-				if (Input.GetKeyDown (KeyCode.UpArrow) && attacking == false) {
+				if (Input.GetKey (KeyCode.JoystickButton0)&& attacking == false) {
 					StartCoroutine (Melee ());
 					attacking = true;
 					meTimer = 6 / speed + armor / 4;
@@ -110,7 +100,7 @@ public class PlayerCombat: MonoBehaviour {
 					maTimer = 6 / speed + armor / 2 - resist / 2;
 				}
 			}
-						
+
 		}
 		if (boss != null && boss.GetComponent<BossShell> ().fight == false) {
 			battle = false;

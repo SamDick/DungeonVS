@@ -16,7 +16,10 @@ public class ItemContact : MonoBehaviour {
 			if (transform.parent.GetComponent<BossShell> () != null) {
 				if (transform.parent.GetComponent<BossShell> ().HP <= 0) {
 					GetComponent<BoxCollider> ().enabled = true;
-					GetComponent<MeshRenderer> ().enabled = true;
+					GetComponent<SpriteRenderer> ().enabled = true;
+					if (transform.rotation != GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform> ().rotation) {
+						transform.rotation = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform> ().rotation;
+					}
 				}
 
 			}

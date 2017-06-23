@@ -52,7 +52,7 @@ public class Inventory : MonoBehaviour {
 		if (newItemGO != null) {
 			newItem = newItemGO.GetComponent<ItemShell> ();
 
-			if (Input.GetKeyDown (KeyCode.Space)) {
+			if (Input.GetKeyDown (KeyCode.JoystickButton3)) {
 
 				Pickup ();
 
@@ -68,15 +68,15 @@ public class Inventory : MonoBehaviour {
 		if (newItem.type == 0) {
 			if (Weapon != null) {
 				Weapon.transform.parent = null;
-				Weapon.GetComponent<MeshRenderer> ().enabled = true;
+				Weapon.GetComponent<SpriteRenderer> ().enabled = true;
 			}
 				Inv.RemoveAt (0);
 				Weapon = newItemGO;
 				Inv.Insert (0, Weapon);
 		}
 
-		newItemGO.GetComponent<MeshRenderer> ().enabled = false;
-		newItemGO.transform.parent = GameObject.Find ("DungeonPlayer(Clone)").transform;
+		newItemGO.GetComponent<SpriteRenderer> ().enabled = false;
+		newItemGO.transform.parent = GameObject.Find ("SoloPlayer(Clone)").transform;
 
 
 
