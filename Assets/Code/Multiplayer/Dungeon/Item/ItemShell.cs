@@ -33,7 +33,7 @@ public class ItemShell : MonoBehaviour {
 
 
 	void Start () {
-		iL = GameObject.Find ("Maze(Clone)").GetComponent<ItemLoader> ();
+		iL = GameObject.Find ("DungeonV2(Clone)").GetComponent<ItemLoader> ();
 		its = GetComponent<ItemShell> ();
 		newList = iL.newList;
 		setItems = GameObject.FindGameObjectsWithTag ("Item");

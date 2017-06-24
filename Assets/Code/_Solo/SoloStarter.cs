@@ -8,7 +8,8 @@ public class SoloStarter : MonoBehaviour {
 	void Start () {
 
 		Instantiate (Resources.Load("HUD"), Vector3.zero, transform.rotation, null);
-		Instantiate (Resources.Load ("Maze"), Vector3.zero, transform.rotation, null);
+		//Instantiate (Resources.Load ("Maze"), Vector3.zero, transform.rotation, null);
+		Instantiate (Resources.Load ("Dungeon/DungeonV2"), Vector3.zero, transform.rotation, null);
 		Instantiate (Resources.Load("SoloPlayer"), new Vector3(0,6,0), Quaternion.identity, null);
 		
 	}

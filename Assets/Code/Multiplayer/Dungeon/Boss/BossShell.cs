@@ -35,7 +35,7 @@ public class BossShell : MonoBehaviour {
 		sm = GameObject.Find ("Manager(Clone)").GetComponent<StatsManager> ();
 
 		setBosses = GameObject.FindGameObjectsWithTag ("BossSpot");
-		bL = GameObject.Find ("Maze(Clone)").GetComponent<BossLoader> ();
+		bL = GameObject.Find ("DungeonV2(Clone)").GetComponent<BossLoader> ();
 		newList = bL.newList;
 		bs = GetComponent<BossShell> ();
 	
